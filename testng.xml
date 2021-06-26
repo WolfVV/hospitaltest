@@ -3,6 +3,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="TestSuite" thread-count="2" parallel="tests" >
+<!--    <listeners>-->
+<!--        <listener class-name="ListenersTestNG" />-->
+<!--    </listeners>-->
     <test name="ChromeTest">
         <parameter name="browser" value="chrome" />
         <classes>
@@ -19,7 +22,7 @@
         <parameter name="browser" value="firefox" />
         <classes>
 <!--            <class name="BaseTestPattern"/>-->
-            <class name="LoginWithCorrectCredentials"/>
+<!--            <class name="LoginWithCorrectCredentials"/>-->
 <!--            <class name="LoginWithInvalidCredentials"/>-->
 <!--            <class name="Logout"/>-->
 <!--            <class name="RequestNewMedication"/>-->
